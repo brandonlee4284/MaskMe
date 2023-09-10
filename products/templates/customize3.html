@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customize</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+{% block content %}
+<body>
+<div style="font-size:25px; position: relative; left:190px; top:50px; ">
+    <div style="color:Gray">
+        Step 1<hr style='display:inline-block; width:300px;position: relative; left:15px; top:10px;padding:1px;'/>
+    </div>
+    <p style="position: relative; left:410px; top:-37px; color:Gray">Step 2</p>
+    <hr style='display:inline-block; width:300px;position: relative; left:500px; top:-86px;padding:1px;'/>
+    <p style="position: relative; left:820px; top:-133px; color:Black "><b>Step 3</b></p>
+
+</div>
+
+
+
+<div style="position: relative; left:190px; top:-50px">
+    <h1 style="font-family:Papyrus">Design</h1>
+    <!-- QUESTION 3 -->
+    <p>Choose your design: </p>
+    <form>
+        <input type="radio" id="image" name="design" value="IMAGE">
+        <label for="image">Upload image</label><br>
+        <div class="topnav" style="position: relative; left:0px; top:0px" >
+            <input type="text" placeholder="Image URL..">
+        </div>
+        <input type="radio" id="text" name="design" value="TEXT">
+        <label for="text">Text</label><br>
+        <div class="topnav" style="position: relative; left:0px; top:0px" >
+            <input type="text" placeholder="Text..">
+        </div>
+        <input type="radio" id="single_color" name="design" value="SINGLE_COLOR">
+        <label for="single_color">Single Color</label><br>
+        <div class="topnav" style="position: relative; left:0px; top:0px" >
+            <input type="text" placeholder="Color..">
+        </div>
+        <input type="radio" id="gradient" name="design" value="GRADIENT">
+        <label for="gradient">Gradient</label><br>
+    </form>
+    <br>
+    <!-- payment BUTTON -->
+    <form action="/products/customize2">
+        <input type="submit" Value="Back">
+    </form>
+
+    <form action="/products/payment" style="position: relative; left:60px; top:-30px">
+        <input type="submit" Value="Continue To Shipping">
+    </form>
+</div>
+</body>
+{% endblock %}
+
+</html>

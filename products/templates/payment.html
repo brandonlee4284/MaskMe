@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+    </style>
+</head>
+{% block content %}
+<body>
+
+<h1>Shipping</h1>
+<hr style="width: 60%;">
+<div>
+
+    <!-- STUFF UNDER THE SHIPPING LINE-->
+    <div style="position: relative; left:0px; top:0px">
+        <div style="position: relative; left:0px; top:0px">
+            <label>First Name*</label><br>
+            <div class="topnav">
+                <input type="text" placeholder="">
+            </div>
+
+
+            <div style="position: relative; left:250px; top:-54px">
+                <label>Last Name*</label><br>
+                <div class="topnav">
+                    <input type="text" placeholder="">
+                </div>
+            </div>
+
+
+            <div style="position: relative; left:0px; top:-20px">
+                <div style="position: relative; left:0px; top:0px">
+                    <label>Company (Optional)</label><br>
+                    <div class="topnav">
+                        <input type="text" placeholder="">
+                    </div>
+
+
+                    <div style="position: relative; left:250px; top:-54px">
+                        <label>Country*</label><br>
+                        <div class="topnav">
+                            <input type="text" placeholder="">
+                        </div>
+                    </div>
+
+                    <div style="position: relative; left:0px; top:-20px">
+                        <div style="position: relative; left:0px; top:0px">
+                            <label>Street Address*</label><br>
+                            <div class="topnav">
+                                <input type="text" placeholder="">
+                            </div>
+
+
+                            <div style="position: relative; left:250px; top:-54px">
+                                <label>Continue Street Address</label><br>
+                                <div class="topnav">
+                                    <input type="text" placeholder="">
+                                </div>
+                            </div>
+
+
+                            <div style="position: relative; left:0px; top:-20px">
+                                <div style="position: relative; left:0px; top:0px">
+                                    <label>City*</label><br>
+                                    <div class="topnav">
+                                        <input type="text" placeholder="">
+                                    </div>
+
+
+                                    <div style="position: relative; left:250px; top:-54px">
+                                        <label>State/Zipcode*</label><br>
+                                        <div class="topnav">
+                                            <input type="text" placeholder="">
+                                        </div>
+                                    </div>
+
+
+                                    <!--btc-->
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/BTC_Logo.svg"
+                                             width="20" height="20"
+                                             style="position: relative; left: 250px; top:170px">
+                                    <!--eth-->
+                                    <img src="https://digitalcoinprice.com/assets/images/coins/200x200/ethereum.png"
+                                             width="20" height="20"
+                                             style="position: relative; left: 255px; top:170px">
+                                    <!--tether-->
+                                    <img src="https://cdn.iconscout.com/icon/free/png-512/tether-441954.png"
+                                             width="20" height="20"
+                                             style="position: relative; left: 260px; top:170px">
+                                    <!--usdc-->
+                                    <img src="https://dynamic-assets.coinbase.com/3c15df5e2ac7d4abbe9499ed9335041f00c620f28e8de2f93474a9f432058742cdf4674bd43f309e69778a26969372310135be97eb183d91c492154176d455b8/asset_icons/9d67b728b6c8f457717154b3a35f9ddc702eae7e76c4684ee39302c4d7fd0bb8.png"
+                                             width="20" height="20"
+                                             style="position: relative; left: 265px; top:170px">
+                                    <!--CREDIT CARD IMAGES GO HERE-->
+                                    <div style="position: relative; left:0px; top:-150px">
+                                        <img src="https://assets.materialup.com/uploads/ca3e4140-9aaa-4a17-8577-815445b2efc3/preview.png"
+                                             width="200" height="150"
+                                             style="position: relative; left: -20px; top:240px">
+
+
+
+
+
+                                        <h1>Payment</h1>
+                                        <hr style="width: 60%;">
+
+                                        <div style="position: relative; left:0px; top:0px">
+                                            <p>Payment Type</p>
+                                            <input type="radio" id="card" name="payment" value="CARD">
+                                            <label for="card">Credit/Debit Card</label><br>
+                                        </div>
+
+                                         <div style="position: relative; left:250px; top:-24px">
+                                            <input type="radio" id="crypto" name="payment" value="CRYPTO">
+                                            <label for="crypto">BitPay</label><br>
+                                             <a href="https://bitpay.com/" target="_blank"
+                                                   class="btn btn-primary"
+                                                   style="background-color:Black;border:0px solid LightGray;position:relative;left:0px;top:40px;padding:3px">BitPay</a>
+                                        </div>
+
+
+
+
+                                        <br>
+                                        <br>
+
+
+                                        <!-- STUFF UNDER THE SHIPPING LINE-->
+                                        <div style="position: relative; left:0px; top:0px">
+                                            <div style="position: relative; left:0px; top:0px">
+                                                <label id="cardnumbers">Card Number*</label><br>
+                                                <div class="topnav">
+                                                    <input type="text" placeholder="xxxx xxxx xxxx xxxx">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div style="position: relative; left:250px; top:-54px">
+                                            <label>Expiration Date*</label><br>
+                                            <div class="topnav">
+                                                <input type="text" placeholder="mm/yy">
+                                            </div>
+                                        </div>
+
+
+                                        <div style="position: relative; left:0px; top:-20px">
+                                            <div style="position: relative; left:0px; top:0px">
+                                                <label>Name on Card*</label><br>
+                                                <div class="topnav">
+                                                    <input type="text" placeholder="">
+                                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEkAAAAsCAYAAAApSpU1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpCRTMzN0UzMEQyNzcxMUUxOTA4NUFBQzc4QjU0RDMxMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDNkU0NDY5QUQyNzcxMUUxOTA4NUFBQzc4QjU0RDMxMCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkJFMzM3RTJFRDI3NzExRTE5MDg1QUFDNzhCNTREMzEwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkJFMzM3RTJGRDI3NzExRTE5MDg1QUFDNzhCNTREMzEwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+c/edDQAAA2JJREFUeNrsms1OGlEUx8/MgFJFCQ2yqYnGxMboSon7LnSDuzYsfAFrfQGfwSdowyuYdIcbXRCXfnSnsZIYTewGSQmCVgVmev+3HjoQsQN1xZx/QuZ+D/d3zz1zLozhOA5dX1+Hq9Vq9ubmZs62bYN8LtM0ncHBwW/BYPDd8PBwJYDC+/v7XQVoVlWQYfieESnDMcrlckLx2FXZORAxLi4u6v39/YayJhL9kbIiGI8zNjZmmSofeHh4MJSJCZnmLUe1Wg1GFAAZodN+22le8EldOaHz83N9HRkZodvbW8rn8wSfpnwbjY+P09XVla7jMuQhrucxUM/l8Xhc90E5X9GWr7jPwMBAI48xcT06OqKZmRk9DqfdY6MP+vL37RCSEWgp8KRsNkvz8/N0fHysJ8fAlpaWKJPJ6DwmjC+MSaAdhD6o4/ao29/f15OAGCQmgr4YD/VYALTd29vT9cqHagBo414w3JPTW1tblEwm9b15fPRbW1vzDIgfYl1ttdbV5hVziy2rVYVCQZfzarOw0mwdPGFAwCKwuN/09PSTY6It0hgHbdzWjI9ywt1sN73VQrlc7peKB0g5cHFEj+rr60P8SJOTk6/Mbrabj5x299vNd+GAWNK/LUk/3ZaXl2l0dJQuLy+FzqPcPDQkeP1YLEYSdTc/wS3LooODg7/brV6vCxmX3DwEkkB6YUjqxCtkXHLzaECybVvIuOTmIZA6gSTBZPtgsnHADYVCQqZFd3d3zQdckYezm8gDJPkrqVluHmJJHhTw0qhSqfQsgHA47B0SzOu5MGBqaqrnAJ2cnMh2e/Ht1iuO++zsjDY3N3U6kUjQ4eEhRaNRmpiY0GmULSws+NtxAwhULBY1GEBDGQBBKPN9CAAgsCSGtbOz00ijnGH5PgTAT64AAqtBemNjg9bX12l7e5vS6bRYEixlcXFR+x4AQTqVSmlQnO7UkhoH3KGhIWr3fhLipF4NAdrFSXg/qVwuNx9w5VjS3pICnVCXY8l/hu69bE2y3Z4BxMc0OZZ4tCRHZeQH7qfiI9MEFweQbJucU/m3pFngUbPr35GE466trnx8/zn95evrSPQtdfmiaY/J+Vkqnn5aWf0APsbjC5RBlXkTiURiKm+Coh/fMOHdZFmWXSqVCir5Q/Go/hZgAIS/w3X4SEpcAAAAAElFTkSuQmCC"
+                                                         width="40" height="25"
+                                                         style="position: relative; left: 270px; top:-3px">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div style="position: relative; left:250px; top:-75px">
+                                            <div style="position: relative; left:0px; top:0px">
+                                                <label>CVC*</label><br>
+                                                <div class="topnav">
+                                                    <input type="text" placeholder="xxx">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div style="position: relative; left:0px; top:-40px">
+                                            <input type="radio" id="billing" name="address" value="BILLING">
+                                            <label for="billing">Use Same Shipping Address for Billing
+                                                Address</label><br>
+                                        </div>
+                                    </div>
+                                    <div style="position: relative; left:0px; top:-120px">
+                                        <h1>Contact Information</h1>
+                                        <hr style="width: 60%;">
+                                        <!-- STUFF UNDER THE SHIPPING LINE-->
+                                        <div style="position: relative; left:0px; top:0px">
+                                            <div style="position: relative; left:0px; top:0px">
+                                                <label>Email*</label><br>
+                                                <div class="topnav">
+                                                    <input type="text" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div style="position: relative; left:250px; top:-54px">
+                                            <label>Phone Number*</label><br>
+                                            <div class="topnav">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="card"
+                                             style="width: 20rem; position: relative; left: 850px; top: -1130px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Order Summary</h5>
+                                                <hr>
+                                                <p class="card-text">Subtotal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$12.50</p>
+                                                <p class="card-text">Shipping fee:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$4.99</p>
+                                                <p class="card-text">Sales tax:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-</p>
+
+                                                <div style="position:relative;left:0px;top:0px">
+                                                    <p>Promo: </p>
+                                                    <br>
+                                                    <div style="position:relative;left:0px;top:10px">
+                                                        <div class="topnav"
+                                                             style="position:relative;left:0px;top:-42px">
+                                                            <input type="text" placeholder="">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <hr style="position:relative;left:0px;top:-10px">
+                                                <p style="position:relative;left:0px;top:-25px" class="card-text">Total:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-</p>
+
+                                                <a href="http://127.0.0.1:8000/products/confirmation_page"
+                                                   class="btn btn-primary"
+                                                   style="background-color:Black;border:2px solid LightGray;position:relative;left:0px;top:-10px">Submit
+                                                    Order</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button onclick="myFunction(), picture()"
+        style="position:relative;left:1050px;top:-1503px; background-color:Black;color:white;font-size:12px;padding:5px">
+    Apply
+</button>
+
+<p id="demo" style="position:relative;left:895px;top:-1495px;color:#5ce600; font-size:12px"></p>
+
+<img id="pic" src="pic" style="display:none;width:27px;height:18px;position:relative;left:865px;top:-1530px;"/>
+
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Your promo has been applied to your cart!";
+}
+
+function picture(){
+    var pic = "https://cms-assets.tutsplus.com/uploads/users/523/posts/32694/preview_image/tutorial-preview-small.png"
+    document.getElementById('pic').src = pic.replace('90x90', '225x225');
+    document.getElementById('pic').style.display='block';
+}
+
+</script>
+
+</body>
+{% endblock %}
+
+</html>

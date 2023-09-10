@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        h1 {
+          font-size: 40px;
+        }
+
+    </style>
+
+</head>
+{% block content %}
+<body>
+<center>
+    <!--BACKGROUND -->
+    <div class="row">
+        <div style="position: relative; left:0px; top:100px">
+            <h1>
+                Our mission is to give customers the<br>
+                best fitting and customizable mask possible
+            </h1>
+            <p style="position: relative; left:0px; top:80px">
+                At MaskMe we strive to provide the most comfortable and customizable masks<br>
+                that is accessible to all. We pride ourselves in our one-of-a-kind service as it is<br>
+                game changing when it comes to the comfort and looks that is curated just for you.<br>
+                With our state of the art algorithm and your preferred customizations we are able<br>
+                to check all the boxes when it comes to your necessities in a mask.
+                <br>
+                <br>
+                We see our business revolutionizing the mask industry with our disruptive<br>
+                innovation and as we grow we will continue to add new features to keep<br>
+                up with future trends and technologies. We are so excited for you to try<br>
+                our unique product!
+                <br>
+                <br>
+                <br>
+                <br>
+                Think Your Mask Looks the Best?<br>
+                Follow us on our socials and tag us with your one-of-a-kind masks
+            </p>
+            <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" width="30" height="30" style="position: relative; left:-40px; top:100px">
+            <img src="https://1000logos.net/wp-content/uploads/2017/08/Snapchat-Logo-2013.png" width="30" height="30" style="position: relative; left:-10px; top:100px">
+            <img src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_1280.png" width="30" height="30" style="position: relative; left:20px; top:100px">
+            <img src="https://www.cbs42.com/wp-content/uploads/sites/81/2020/11/twitter.png" width="30" height="30" style="position: relative; left:50px; top:100px">
+            <p style="position: relative; left:-0px; top:110px">@maskmecorp</p>
+            <p style="position: relative; left:-0px; top:160px">"By You For You"</p>
+
+
+
+
+        </div>
+        {% for aboutUs in aboutus %}
+        <div class="col">
+
+        </div>
+
+    </div>
+        {% endfor %}
+</center>
+
+</body>
+{% endblock %}
+</html>

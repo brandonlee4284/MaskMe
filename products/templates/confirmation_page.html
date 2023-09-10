@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmation Page</title>
+</head>
+{% block content %}
+
+<body>
+<h1>Your Confirmation</h1>
+<p>We Got Your Order and Its On the Way!</p>
+<img src="https://cdn.dribbble.com/users/633/screenshots/6243352/weevan.gif" width="200" height="150"
+     style="position: relative; left:20px; top:-20px">
+<a href="http://127.0.0.1:8000/products/home" class="btn btn-primary"
+   style="background-color:White; border:2px solid Black;color:Black;position: relative; left:-170px; top:80px">Continue
+    Shopping</a>
+<h1 style="font-size: 25px;position:relative;left:0px;top:100px">Shop What Other Customers Have Recently Customized</h1>
+
+<div class="row" style="position: relative; left:15px; top: 120px">
+
+    <!-- MASK 1-->
+    <div class="card" style="width: 20rem; position: relative; left: 0px; top: 0px">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/71qzaCChIdL._AC_UL320_SR320,320_.jpg" class="card-img-top" width="500"
+             height="300" style="position: relative; left: 0px; top: 20px">
+        <div class="card-body">
+            <h5 class="card-title">Pink Sky Mask</h5>
+
+        </div>
+    </div>
+    <!-- MASK 2-->
+    <div class="card" style="width: 20rem; position: relative; left: 0px; top: 0px">
+        <img src="https://m.media-amazon.com/images/I/71c8rGMjuaL._SL1500_.jpg"
+             class="card-img-top" width="500" height="300">
+        <div class="card-body">
+            <h5 class="card-title">Gradient Crystal Mask</h5>
+
+        </div>
+    </div>
+    <!-- MASK 3-->
+    <div class="card" style="width: 20rem; position: relative; left: 0px; top: 0px">
+        <img src="https://m.media-amazon.com/images/I/81ykERu13cL._AC_SL1500_.jpg"
+             class="card-img-top" width="500" height="300">
+        <div class="card-body">
+            <h5 class="card-title">Lemon Mask</h5>
+
+        </div>
+    </div>
+    <!-- MASK 4-->
+    <div class="card" style="width: 20rem; position: relative; left: 0px; top: 0px">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/71p0K6gwwLL._AC_UL320_SR320,320_.jpg" class="card-img-top" width="500"
+             height="300" style="position: relative; left: 0px; top: 20px">
+        <div class="card-body">
+            <h5 class="card-title">Yin Yang Mask</h5>
+
+        </div>
+    </div>
+</div>
+</body>
+{% endblock %}
+</html>

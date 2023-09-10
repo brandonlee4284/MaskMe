@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customize</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+{% block content %}
+<body>
+
+<div style="font-size:25px; position: relative; left:190px; top:50px;">
+    <div style="color:Black">
+        <b>Step 1</b><hr style='display:inline-block; width:300px;position: relative; left:15px; top:10px;padding:1px;'/>
+    </div>
+    <p style="position: relative; left:410px; top:-37px; color:Gray">Step 2</p>
+    <hr style='display:inline-block; width:300px;position: relative; left:500px; top:-86px;padding:1px;'/>
+    <p style="position: relative; left:820px; top:-133px; color:Gray ">Step 3</p>
+
+</div>
+
+
+
+<div style="position: relative; left:190px; top:-50px">
+    <!-- QUESTION 1 -->
+    <h1 style="font-family:Papyrus">Size</h1>
+    <p>Choose your size: </p>
+    <form>
+        <input type="radio" id="small" name="size" value="SMALL">
+        <label for="small">Small</label><br>
+        <input type="radio" id="medium" name="size" value="MEDIUM">
+        <label for="medium">Medium</label><br>
+        <input type="radio" id="large" name="size" value="LARGE">
+        <label for="large">Large</label>
+    </form>
+
+    <br>
+    <!-- Next and back BUTTON -->
+    <form action="/products/customize">
+        <input type="submit" Value="Back">
+    </form>
+
+    <form action="/products/customize2" style="position: relative; left:60px; top:-30px">
+        <input type="submit" Value="Next">
+    </form>
+</div>
+</body>
+{% endblock %}
+
+</html>

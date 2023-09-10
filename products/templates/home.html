@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+  border: 5px solid #000;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+{% block content %}
+<body style="background-color: White">
+
+
+<div class="row">
+    <div class="col">
+        <center>
+
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71EvBQ7p83L._AC_SL1500_.jpg" width="550" height="550" style="position: relative; left:-20px; top:-80px" border="5px">
+            <iframe style="position: relative; left:100px; top:800px; border:3px solid Black" width="700" height="393" src="https://www.youtube-nocookie.com/embed/lnOKbnehGI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <h1 style="position: relative; left:240px; top:-530px; font-size: 50px">
+                Make Your Custom
+                <br>
+                Mask Now!
+                <br>
+                By You For You
+            </h1>
+
+            <a href="http://127.0.0.1:8000/products/" class="btn btn-primary" style="background-color:White;border:2px solid Black;color:Black;position: relative; left:215px; top:-440px">Shop Best Sellers</a>
+            <a href="http://127.0.0.1:8000/products/customize" class="btn btn-primary" style="background-color:White;border:2px solid Black;color:Black;position: relative; left:265px; top:-440px">Start Customizing</a>
+            <h1 style="position: relative; left:-350px; top:-50px">
+                Fully Customizable.
+                <br>
+                No Limits.
+                <br>
+                Available Now.
+            </h1>
+            <p style="position: relative; left:-350px; top:-50px">
+                Explore the endless possibilities when
+                <br>
+                you start customizing your own mask
+                <br>
+                today!
+            </p>
+            <a href="http://127.0.0.1:8000/products/customize" class="btn btn-primary" style="background-color:White; border:2px solid Black;color:Black;position: relative; left:-350px; top:-50px">Start Customizing</a>
+
+        </center>
+    </div>
+</div>
+
+</body>
+{% endblock %}
+</html>

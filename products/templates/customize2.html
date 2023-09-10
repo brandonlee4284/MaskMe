@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customize</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+{% block content %}
+<body>
+
+<div style="font-size:25px; position: relative; left:190px; top:50px; ">
+    <div style="color:Gray">
+        Step 1<hr style='display:inline-block; width:300px;position: relative; left:15px; top:10px;padding:1px;'/>
+    </div>
+    <p style="position: relative; left:405px; top:-37px; color:Black"><b>Step 2</b></p>
+    <hr style='display:inline-block; width:300px;position: relative; left:500px; top:-86px;padding:1px;'/>
+    <p style="position: relative; left:820px; top:-133px; color:Gray ">Step 3</p>
+
+</div>
+
+
+<div style="position: relative; left:190px; top:-50px">
+
+    <!-- QUESTION 2 -->
+    <h1 style="font-family:Papyrus">Material</h1>
+    <p>Choose your material: </p>
+    <form>
+        <input type="radio" id="polyester" name="material" value="POLYESTER">
+        <label for="polyester">Polyester</label><br>
+        <input type="radio" id="cotton" name="material" value="COTTON">
+        <label for="cotton">Cotton</label><br>
+        <input type="radio" id="fur" name="material" value="FUR">
+        <label for="fur">
+            Fur
+            <i>(+$4.99)</i>
+        </label><br>
+        <input type="radio" id="crystals" name="material" value="CRYSTALS">
+        <label for="crystals">
+            Crystal
+            <i>(+$4.99)</i>
+        </label><br>
+        <input type="radio" id="fleece" name="material" value="FLEECE">
+        <label for="fleece">
+            Fleece
+            <i>(+$4.99)</i>
+        </label><br>
+        <input type="radio" id="velvet" name="material" value="VELVET">
+        <label for="velvet">
+            Velvet
+            <i>(+$9.99)</i>
+        </label><br>
+        <input type="radio" id="cashmere" name="material" value="CASHMERE">
+        <label for="cashmere">
+            Cashmere
+            <i>(+$9.99)</i>
+        </label><br>
+    </form>
+    <br>
+
+    <!-- Next and back BUTTON -->
+    <form action="/products/customize1">
+        <input type="submit" Value="Back">
+    </form>
+
+    <form action="/products/customize3" style="position: relative; left:60px; top:-30px">
+        <input type="submit" Value="Next">
+    </form>
+</div>
+</body>
+{% endblock %}
+
+</html>
